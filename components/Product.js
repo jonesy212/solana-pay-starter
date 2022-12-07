@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../styles/Product.module.css";
-import IPFSDownload from './ipfsDownload';
-
+import Buy from './Buy';
 export default function Product({ product }) {
   const { id, name, price, description, image_url } = product;
 
@@ -20,15 +19,15 @@ export default function Product({ product }) {
         <div className={styles.product_action}>
           <div className={styles.product_price}>{price} USDC</div>
 
-          {/* <Buy itemID={id} /> */}
+          <Buy itemID={id} />
 
           {/* for free downloads...connect this to  */}
           {/* I'm hardcoding these for now, we'll fetch the hash from the API later */}
-          <IPFSDownload
-                      filename="Intro to Cryptocurrency.zip"
-                      hash="QmcPVawa3PahHkTFrZC7WjiS2fqnQR8et1VtQpncny2ZDN"
+          {/* <IPFSDownload
+                      filename="Intro_To_Cryptocurrency.pdf.zip"
+                      hash="QmY4ktrCB9pquyGAvD8gVw2vHWfCG51iAt5vHDQK5w48jb"
                       cta="Download book"
-          />
+          /> */}
         </div>
       </div>
     </div>

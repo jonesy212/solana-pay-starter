@@ -1,14 +1,14 @@
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
-    clusterApiUrl,
-    Connection, LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction
+  clusterApiUrl,
+  Connection, LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction
 } from "@solana/web3.js";
 import BigNumber from "bignumber.js";
 import products from "./products.json";
 
 
 // Make sure you replace this with your wallet address!
-const sellerAddress = 'B1aLAAe4vW8nSQCetXnYqJfRxzTjnbooczwkUJAr7yMS'
+const sellerAddress = 'EwZhVZSTBkaFoNHz9e7PgXtv4aLu18cpsMsueG9o2hDx'
 const sellerPublicKey = new PublicKey(sellerAddress);
 
 const createTransaction = async (req, res) => {

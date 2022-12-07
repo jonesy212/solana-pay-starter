@@ -70,8 +70,8 @@ export default function Buy({ itemID }) {
     <div>
       {paid ? (
         <IPFSDownload
-          filename="Intro to Cryptocurrency.zip"
-          hash="QmcPVawa3PahHkTFrZC7WjiS2fqnQR8et1VtQpncny2ZDN"
+          filename="Intro_To_Cryptocurrency.pdf.zip "
+          hash="QmY4ktrCB9pquyGAvD8gVw2vHWfCG51iAt5vHDQK5w48jb"
           cta="Download book"
         />
       ) : (
